@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+
+    <!-- 阴影：偏移主体，模拟浮起效果 -->
+    <path
+        android:fillColor="#0A000000"
+        android:pathData="M54,38A16,16 0 0,1 70,22L122,22A16,16 0 0,1 138,38L138,175A16,16 0 0,1 122,191L70,191A16,16 0 0,1 54,175Z"/>
+    <path
+        android:fillColor="#08000000"
+        android:pathData="M56,40A16,16 0 0,1 72,24L120,24A16,16 0 0,1 136,40L136,173A16,16 0 0,1 120,189L72,189A16,16 0 0,1 56,173Z"/>
+
+    <!-- 遥控器主体 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="0.5"
+        android:pathData="M52,36A16,16 0 0,1 68,20L124,20A16,16 0 0,1 140,36L140,172A16,16 0 0,1 124,188L68,188A16,16 0 0,1 52,172Z"/>
+
+    <!-- 顶部红外发射区（红色） -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M76,25A3,3 0 0,1 79,22L113,22A3,3 0 0,1 116,25L116,28A3,3 0 0,1 113,31L79,31A3,3 0 0,1 76,28Z"/>
+
+    <!-- 红外光晕 -->
+    <path
+        android:fillColor="#EF5350"
+        android:fillAlpha="0.35"
+        android:pathData="M76,24C76,21.79 84.95,20 96,20C107.05,20 116,21.79 116,24C116,26.21 107.05,28 96,28C84.95,28 76,26.21 76,24Z"/>
+
+    <!-- 状态显示屏（深蓝） -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M64,40A4,4 0 0,1 68,36L124,36A4,4 0 0,1 128,40L128,58A4,4 0 0,1 124,62L68,62A4,4 0 0,1 64,58Z"/>
+
+    <!-- 屏幕内文字装饰（三段横线） -->
+    <path
+        android:strokeColor="#64FFDA"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M74,45L96,45"/>
+    <path
+        android:strokeColor="#64FFDA"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M74,52L92,52"/>
+
+    <!-- 电源按钮（红色） -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M76,74A6,6 0 0,1 82,68L110,68A6,6 0 0,1 116,74L116,92A6,6 0 0,1 110,98L82,98A6,6 0 0,1 76,92Z"/>
+
+    <!-- 电源图标（白色，国际电源符号） -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M102,80A6,6 0 0,0 90,80"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M96,72L96,82"/>
+
+    <!-- 方向圆盘（浅灰底） -->
+    <path
+        android:fillColor="#F5F5F7"
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="0.5"
+        android:pathData="M68,117A28,28 0 1,0 124,117A28,28 0 1,0 68,117"/>
+
+    <!-- 方向十字线 -->
+    <path
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.8"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M96,89L96,145"/>
+    <path
+        android:strokeColor="#BDBDBD"
+        android:strokeWidth="1.8"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M68,117L124,117"/>
+
+    <!-- 方向中心圆点 -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M88,117A8,8 0 1,0 104,117A8,8 0 1,0 88,117"/>
+
+    <!-- TV 标签 -->
+    <path
+        android:fillColor="#E8EAF6"
+        android:pathData="M70,159A3,3 0 0,1 73,156L85,156A3,3 0 0,1 88,159L88,166A3,3 0 0,1 85,169L73,169A3,3 0 0,1 70,166Z"/>
+    <!-- TV 文字装饰 -->
+    <path
+        android:strokeColor="#1A237E"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M74,160L74,167M80,160L80,167"/>
+    <path
+        android:strokeColor="#1A237E"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M76,161L80,165L76,165M84,161L80,165"/>
+
+    <!-- AC 标签 -->
+    <path
+        android:fillColor="#E8EAF6"
+        android:pathData="M104,159A3,3 0 0,1 107,156L119,156A3,3 0 0,1 122,159L122,166A3,3 0 0,1 119,169L107,169A3,3 0 0,1 104,166Z"/>
+    <!-- AC 文字装饰 -->
+    <path
+        android:strokeColor="#1A237E"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M108,162L111,167L114,162M108,165L111,160L114,165"/>
+
+    <!-- 底部信号波纹 -->
+    <path
+        android:fillColor="#1A237E"
+        android:fillAlpha="0.45"
+        android:pathData="M93,176C93,175.45 94.34,175 96,175C97.66,175 99,175.45 99,176C99,176.55 97.66,177 96,177C94.34,177 93,176.55 93,176Z"/>
+    <path
+        android:fillColor="#1A237E"
+        android:fillAlpha="0.2"
+        android:pathData="M88,176C88,174.9 91.58,174 96,174C100.42,174 104,174.9 104,176C104,177.1 100.42,178 96,178C91.58,178 88,177.1 88,176Z"/>
+    <path
+        android:fillColor="#1A237E"
+        android:fillAlpha="0.08"
+        android:pathData="M80,176C80,173.79 87.16,172 96,172C104.84,172 112,173.79 112,176C112,178.21 104.84,180 96,180C87.16,180 80,178.21 80,176Z"/>
+
+</vector>

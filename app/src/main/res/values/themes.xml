@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.UniversalTVRemote" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#0D47A1</item>
+        <item name="android:navigationBarColor">#1A1A2E</item>
+    </style>
+</resources>

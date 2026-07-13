@@ -1,0 +1,1976 @@
+{
+  "brands": [
+    {
+      "id": "samsung",
+      "name": "三星",
+      "nameEn": "Samsung",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "samsung_1",
+          "protocol": "SAMSUNG",
+          "frequency": 38000,
+          "deviceCode": 0,
+          "description": "Samsung 标准协议",
+          "keys": {
+            "power": { "code": 3772793023, "bits": 32 },
+            "vol_up": { "code": 3772833823, "bits": 32 },
+            "vol_down": { "code": 3772819423, "bits": 32 },
+            "ch_up": { "code": 3772829983, "bits": 32 },
+            "ch_down": { "code": 3772828063, "bits": 32 },
+            "mute": { "code": 3772831663, "bits": 32 },
+            "input": { "code": 3772813183, "bits": 32 },
+            "menu": { "code": 3772825919, "bits": 32 },
+            "home": { "code": 3772814143, "bits": 32 },
+            "back": { "code": 3772815103, "bits": 32 },
+            "exit": { "code": 3772815103, "bits": 32 },
+            "ok": { "code": 3772816063, "bits": 32 },
+            "up": { "code": 3772829983, "bits": 32 },
+            "down": { "code": 3772828063, "bits": 32 },
+            "left": { "code": 3772830943, "bits": 32 },
+            "right": { "code": 3772829023, "bits": 32 },
+            "0": { "code": 3772837183, "bits": 32 },
+            "1": { "code": 3772824063, "bits": 32 },
+            "2": { "code": 3772825023, "bits": 32 },
+            "3": { "code": 3772825983, "bits": 32 },
+            "4": { "code": 3772826943, "bits": 32 },
+            "5": { "code": 3772827903, "bits": 32 },
+            "6": { "code": 3772828863, "bits": 32 },
+            "7": { "code": 3772829823, "bits": 32 },
+            "8": { "code": 3772830783, "bits": 32 },
+            "9": { "code": 3772831743, "bits": 32 }
+          }
+        },
+        {
+          "id": "samsung_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 7,
+          "description": "Samsung NEC 兼容",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "sony",
+      "name": "索尼",
+      "nameEn": "Sony",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "sony_12bit_1",
+          "protocol": "SONY_SIRC",
+          "frequency": 40000,
+          "deviceCode": 1,
+          "description": "Sony 12位 设备码1",
+          "keys": {
+            "power": { "code": 21, "bits": 7 },
+            "vol_up": { "code": 18, "bits": 7 },
+            "vol_down": { "code": 19, "bits": 7 },
+            "ch_up": { "code": 16, "bits": 7 },
+            "ch_down": { "code": 17, "bits": 7 },
+            "mute": { "code": 20, "bits": 7 },
+            "input": { "code": 90, "bits": 7 },
+            "menu": { "code": 117, "bits": 7 },
+            "exit": { "code": 119, "bits": 7 },
+            "home": { "code": 112, "bits": 7 },
+            "back": { "code": 111, "bits": 7 },
+            "ok": { "code": 86, "bits": 7 },
+            "up": { "code": 96, "bits": 7 },
+            "down": { "code": 97, "bits": 7 },
+            "left": { "code": 99, "bits": 7 },
+            "right": { "code": 100, "bits": 7 },
+            "0": { "code": 0, "bits": 7 },
+            "1": { "code": 1, "bits": 7 },
+            "2": { "code": 2, "bits": 7 },
+            "3": { "code": 3, "bits": 7 },
+            "4": { "code": 4, "bits": 7 },
+            "5": { "code": 5, "bits": 7 },
+            "6": { "code": 6, "bits": 7 },
+            "7": { "code": 7, "bits": 7 },
+            "8": { "code": 8, "bits": 7 },
+            "9": { "code": 9, "bits": 7 }
+          }
+        },
+        {
+          "id": "sony_12bit_2",
+          "protocol": "SONY_SIRC",
+          "frequency": 40000,
+          "deviceCode": 2,
+          "description": "Sony 12位 设备码2",
+          "keys": {
+            "power": { "code": 21, "bits": 7 },
+            "vol_up": { "code": 18, "bits": 7 },
+            "vol_down": { "code": 19, "bits": 7 },
+            "ch_up": { "code": 16, "bits": 7 },
+            "ch_down": { "code": 17, "bits": 7 },
+            "mute": { "code": 20, "bits": 7 },
+            "input": { "code": 90, "bits": 7 },
+            "0": { "code": 0, "bits": 7 },
+            "1": { "code": 1, "bits": 7 },
+            "2": { "code": 2, "bits": 7 },
+            "3": { "code": 3, "bits": 7 },
+            "4": { "code": 4, "bits": 7 },
+            "5": { "code": 5, "bits": 7 },
+            "6": { "code": 6, "bits": 7 },
+            "7": { "code": 7, "bits": 7 },
+            "8": { "code": 8, "bits": 7 },
+            "9": { "code": 9, "bits": 7 }
+          }
+        },
+        {
+          "id": "sony_15bit_1",
+          "protocol": "SONY_SIRC",
+          "frequency": 40000,
+          "deviceCode": 1,
+          "description": "Sony 15位 设备码1(新款)",
+          "keys": {
+            "power": { "code": 21, "bits": 7 },
+            "vol_up": { "code": 18, "bits": 7 },
+            "vol_down": { "code": 19, "bits": 7 },
+            "ch_up": { "code": 16, "bits": 7 },
+            "ch_down": { "code": 17, "bits": 7 },
+            "mute": { "code": 20, "bits": 7 },
+            "input": { "code": 90, "bits": 7 },
+            "menu": { "code": 117, "bits": 7 },
+            "home": { "code": 112, "bits": 7 },
+            "ok": { "code": 86, "bits": 7 },
+            "0": { "code": 0, "bits": 7 },
+            "1": { "code": 1, "bits": 7 },
+            "2": { "code": 2, "bits": 7 },
+            "3": { "code": 3, "bits": 7 },
+            "4": { "code": 4, "bits": 7 },
+            "5": { "code": 5, "bits": 7 },
+            "6": { "code": 6, "bits": 7 },
+            "7": { "code": 7, "bits": 7 },
+            "8": { "code": 8, "bits": 7 },
+            "9": { "code": 9, "bits": 7 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "lg",
+      "name": "LG",
+      "nameEn": "LG",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "lg_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 4,
+          "description": "LG NEC 地址码4",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "lg_nec_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 128,
+          "description": "LG NEC 地址码128",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "panasonic",
+      "name": "松下",
+      "nameEn": "Panasonic",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "panasonic_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 32,
+          "description": "Panasonic NEC 地址码32",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "panasonic_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 36,
+          "description": "Panasonic NEC 地址码36",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "panasonic_3",
+          "protocol": "NEC",
+          "frequency": 56000,
+          "deviceCode": 32,
+          "description": "Panasonic 56KHz 地址码32",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tcl",
+      "name": "TCL",
+      "nameEn": "TCL",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "tcl_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 0,
+          "description": "TCL NEC 地址码0",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "home": { "code": 65, "bits": 8 },
+            "back": { "code": 64, "bits": 8 },
+            "ok": { "code": 63, "bits": 8 },
+            "up": { "code": 62, "bits": 8 },
+            "down": { "code": 61, "bits": 8 },
+            "left": { "code": 60, "bits": 8 },
+            "right": { "code": 59, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "tcl_nec_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 1,
+          "description": "TCL NEC 地址码1",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "tcl_nec_3",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 10,
+          "description": "TCL NEC 地址码10",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "hisense",
+      "name": "海信",
+      "nameEn": "Hisense",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "hisense_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 128,
+          "description": "海信 NEC 地址码128",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "home": { "code": 65, "bits": 8 },
+            "back": { "code": 64, "bits": 8 },
+            "ok": { "code": 63, "bits": 8 },
+            "up": { "code": 62, "bits": 8 },
+            "down": { "code": 61, "bits": 8 },
+            "left": { "code": 60, "bits": 8 },
+            "right": { "code": 59, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "hisense_nec_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 132,
+          "description": "海信 NEC 地址码132",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "hisense_nec_3",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 158,
+          "description": "海信 NEC 地址码158",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "skyworth",
+      "name": "创维",
+      "nameEn": "Skyworth",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "skyworth_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 144,
+          "description": "创维 NEC 地址码144",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "skyworth_nec_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 148,
+          "description": "创维 NEC 地址码148",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "changhong",
+      "name": "长虹",
+      "nameEn": "Changhong",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "changhong_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 64,
+          "description": "长虹 NEC 地址码64",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "changhong_nec_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 96,
+          "description": "长虹 NEC 地址码96",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "changhong_nec_3",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 100,
+          "description": "长虹 NEC 地址码100",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "xiaomi",
+      "name": "小米",
+      "nameEn": "Xiaomi",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "xiaomi_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 0,
+          "description": "小米 NEC 地址码0",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "home": { "code": 65, "bits": 8 },
+            "back": { "code": 64, "bits": 8 },
+            "ok": { "code": 63, "bits": 8 },
+            "up": { "code": 62, "bits": 8 },
+            "down": { "code": 61, "bits": 8 },
+            "left": { "code": 60, "bits": 8 },
+            "right": { "code": 59, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "xiaomi_nec_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 255,
+          "description": "小米 NEC 地址码255",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "haier",
+      "name": "海尔",
+      "nameEn": "Haier",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "haier_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 80,
+          "description": "海尔 NEC 地址码80",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "haier_nec_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 81,
+          "description": "海尔 NEC 地址码81",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "konka",
+      "name": "康佳",
+      "nameEn": "Konka",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "konka_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 16,
+          "description": "康佳 NEC 地址码16",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "konka_nec_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 17,
+          "description": "康佳 NEC 地址码17",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "philips",
+      "name": "飞利浦",
+      "nameEn": "Philips",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "philips_rc5_1",
+          "protocol": "RC5",
+          "frequency": 36000,
+          "deviceCode": 0,
+          "description": "Philips RC5 地址0",
+          "keys": {
+            "power": { "code": 12, "bits": 6 },
+            "vol_up": { "code": 16, "bits": 6 },
+            "vol_down": { "code": 17, "bits": 6 },
+            "ch_up": { "code": 32, "bits": 6 },
+            "ch_down": { "code": 33, "bits": 6 },
+            "mute": { "code": 13, "bits": 6 },
+            "menu": { "code": 15, "bits": 6 },
+            "ok": { "code": 36, "bits": 6 },
+            "0": { "code": 0, "bits": 6 },
+            "1": { "code": 1, "bits": 6 },
+            "2": { "code": 2, "bits": 6 },
+            "3": { "code": 3, "bits": 6 },
+            "4": { "code": 4, "bits": 6 },
+            "5": { "code": 5, "bits": 6 },
+            "6": { "code": 6, "bits": 6 },
+            "7": { "code": 7, "bits": 6 },
+            "8": { "code": 8, "bits": 6 },
+            "9": { "code": 9, "bits": 6 }
+          }
+        },
+        {
+          "id": "philips_rc5_2",
+          "protocol": "RC5",
+          "frequency": 36000,
+          "deviceCode": 5,
+          "description": "Philips RC5 地址5",
+          "keys": {
+            "power": { "code": 12, "bits": 6 },
+            "vol_up": { "code": 16, "bits": 6 },
+            "vol_down": { "code": 17, "bits": 6 },
+            "ch_up": { "code": 32, "bits": 6 },
+            "ch_down": { "code": 33, "bits": 6 },
+            "mute": { "code": 13, "bits": 6 },
+            "0": { "code": 0, "bits": 6 },
+            "1": { "code": 1, "bits": 6 },
+            "2": { "code": 2, "bits": 6 },
+            "3": { "code": 3, "bits": 6 },
+            "4": { "code": 4, "bits": 6 },
+            "5": { "code": 5, "bits": 6 },
+            "6": { "code": 6, "bits": 6 },
+            "7": { "code": 7, "bits": 6 },
+            "8": { "code": 8, "bits": 6 },
+            "9": { "code": 9, "bits": 6 }
+          }
+        },
+        {
+          "id": "philips_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 13,
+          "description": "Philips NEC 地址码13",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "sharp",
+      "name": "夏普",
+      "nameEn": "Sharp",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "sharp_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 2,
+          "description": "夏普 NEC 地址码2",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "sharp_nec_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 3,
+          "description": "夏普 NEC 地址码3",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "toshiba",
+      "name": "东芝",
+      "nameEn": "Toshiba",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "toshiba_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 6,
+          "description": "东芝 NEC 地址码6",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "ok": { "code": 65, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        },
+        {
+          "id": "toshiba_nec_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 38,
+          "description": "东芝 NEC 地址码38",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "hisense_vidaa",
+      "name": "VIDAA",
+      "nameEn": "VIDAA",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "vidaa_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 132,
+          "description": "VIDAA NEC 地址码132",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "panda",
+      "name": "熊猫",
+      "nameEn": "Panda",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "panda_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 112,
+          "description": "熊猫 NEC 地址码112",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "coocaa",
+      "name": "酷开",
+      "nameEn": "Coocaa",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "coocaa_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 146,
+          "description": "酷开 NEC 地址码146",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "leshi",
+      "name": "乐视",
+      "nameEn": "LeEco",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "leshi_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 160,
+          "description": "乐视 NEC 地址码160",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "home": { "code": 65, "bits": 8 },
+            "back": { "code": 64, "bits": 8 },
+            "ok": { "code": 63, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fujitsu",
+      "name": "富士通",
+      "nameEn": "Fujitsu",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "fujitsu_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 40,
+          "description": "富士通 NEC 地址码40",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "jvc",
+      "name": "JVC",
+      "nameEn": "JVC",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "jvc_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 12,
+          "description": "JVC NEC 地址码12",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "benq",
+      "name": "明基",
+      "nameEn": "BenQ",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "benq_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 14,
+          "description": "明基 NEC 地址码14",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "input": { "code": 66, "bits": 8 },
+            "menu": { "code": 67, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "hitachi",
+      "name": "日立",
+      "nameEn": "Hitachi",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "hitachi_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 8,
+          "description": "日立 NEC 地址码8",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "sanyo",
+      "name": "三洋",
+      "nameEn": "Sanyo",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "sanyo_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 9,
+          "description": "三洋 NEC 地址码9",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "mitsubishi",
+      "name": "三菱",
+      "nameEn": "Mitsubishi",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "mitsubishi_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 10,
+          "description": "三菱 NEC 地址码10",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "greatwall",
+      "name": "长城",
+      "nameEn": "GreatWall",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "greatwall_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 48,
+          "description": "长城 NEC 地址码48",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "soger",
+      "name": "上广电",
+      "nameEn": "SVA",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "sva_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 130,
+          "description": "上广电 NEC 地址码130",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "akira",
+      "name": "雅佳",
+      "nameEn": "Akai",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "akai_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 56,
+          "description": "雅佳 NEC 地址码56",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "shinco",
+      "name": "新科",
+      "nameEn": "Shinco",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "shinco_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 88,
+          "description": "新科 NEC 地址码88",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "malata",
+      "name": "万利达",
+      "nameEn": "Malata",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "malata_nec_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 90,
+          "description": "万利达 NEC 地址码90",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "vol_up": { "code": 70, "bits": 8 },
+            "vol_down": { "code": 71, "bits": 8 },
+            "ch_up": { "code": 72, "bits": 8 },
+            "ch_down": { "code": 73, "bits": 8 },
+            "mute": { "code": 68, "bits": 8 },
+            "0": { "code": 16, "bits": 8 },
+            "1": { "code": 17, "bits": 8 },
+            "2": { "code": 18, "bits": 8 },
+            "3": { "code": 19, "bits": 8 },
+            "4": { "code": 20, "bits": 8 },
+            "5": { "code": 21, "bits": 8 },
+            "6": { "code": 22, "bits": 8 },
+            "7": { "code": 23, "bits": 8 },
+            "8": { "code": 24, "bits": 8 },
+            "9": { "code": 25, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "gree_ac",
+      "name": "格力",
+      "nameEn": "Gree",
+      "deviceType": "AC",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "gree_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 64,
+          "description": "格力空调 地址码64",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        },
+        {
+          "id": "gree_ac_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 192,
+          "description": "格力空调 地址码192",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "midea_ac",
+      "name": "美的",
+      "nameEn": "Midea",
+      "deviceType": "AC",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "midea_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 128,
+          "description": "美的空调 地址码128",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        },
+        {
+          "id": "midea_ac_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 80,
+          "description": "美的空调 地址码80",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "haier_ac",
+      "name": "海尔",
+      "nameEn": "Haier",
+      "deviceType": "AC",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "haier_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 144,
+          "description": "海尔空调 地址码144",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "mode_auto": { "code": 64, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        },
+        {
+          "id": "haier_ac_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 16,
+          "description": "海尔空调 地址码16",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "daikin_ac",
+      "name": "大金",
+      "nameEn": "Daikin",
+      "deviceType": "AC",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "daikin_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 160,
+          "description": "大金空调 地址码160",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "mitsubishi_ac",
+      "name": "三菱",
+      "nameEn": "Mitsubishi",
+      "deviceType": "AC",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "mitsubishi_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 176,
+          "description": "三菱空调 地址码176",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "panasonic_ac",
+      "name": "松下",
+      "nameEn": "Panasonic",
+      "deviceType": "AC",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "panasonic_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 136,
+          "description": "松下空调 地址码136",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        },
+        {
+          "id": "panasonic_ac_2",
+          "protocol": "NEC",
+          "frequency": 40000,
+          "deviceCode": 168,
+          "description": "松下空调 40KHz 地址码168",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "aux_ac",
+      "name": "奥克斯",
+      "nameEn": "AUX",
+      "deviceType": "AC",
+      "hot": true,
+      "protocols": [
+        {
+          "id": "aux_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 96,
+          "description": "奥克斯空调 地址码96",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        },
+        {
+          "id": "aux_ac_2",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 224,
+          "description": "奥克斯空调 地址码224",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "chigo_ac",
+      "name": "志高",
+      "nameEn": "Chigo",
+      "deviceType": "AC",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "chigo_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 112,
+          "description": "志高空调 地址码112",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "hisense_ac",
+      "name": "海信",
+      "nameEn": "Hisense",
+      "deviceType": "AC",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "hisense_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 152,
+          "description": "海信空调 地址码152",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "changhong_ac",
+      "name": "长虹",
+      "nameEn": "Changhong",
+      "deviceType": "AC",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "changhong_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 200,
+          "description": "长虹空调 地址码200",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tcl_ac",
+      "name": "TCL",
+      "nameEn": "TCL",
+      "deviceType": "AC",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "tcl_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 208,
+          "description": "TCL空调 地址码208",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fujitsu_ac",
+      "name": "富士通",
+      "nameEn": "Fujitsu",
+      "deviceType": "AC",
+      "hot": false,
+      "protocols": [
+        {
+          "id": "fujitsu_ac_1",
+          "protocol": "NEC",
+          "frequency": 38000,
+          "deviceCode": 216,
+          "description": "富士通空调 地址码216",
+          "keys": {
+            "power": { "code": 69, "bits": 8 },
+            "mode_cool": { "code": 65, "bits": 8 },
+            "mode_heat": { "code": 67, "bits": 8 },
+            "mode_dry": { "code": 66, "bits": 8 },
+            "mode_fan": { "code": 68, "bits": 8 },
+            "temp_up": { "code": 72, "bits": 8 },
+            "temp_down": { "code": 71, "bits": 8 },
+            "fan_auto": { "code": 73, "bits": 8 },
+            "fan_low": { "code": 74, "bits": 8 },
+            "fan_med": { "code": 75, "bits": 8 },
+            "fan_high": { "code": 76, "bits": 8 },
+            "swing": { "code": 77, "bits": 8 }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <radialGradient id="bg3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#00695C"/>
+      <stop offset="100%" stop-color="#004D40"/>
+    </radialGradient>
+  </defs>
+  <rect width="192" height="192" rx="36" fill="url(#bg3)"/>
+  
+  <!-- 信号波纹 (从中心向外) -->
+  <ellipse cx="96" cy="72" rx="60" ry="18" fill="none" stroke="#80CBC4" stroke-width="2" opacity="0.12"/>
+  <ellipse cx="96" cy="72" rx="48" ry="14" fill="none" stroke="#80CBC4" stroke-width="2" opacity="0.2"/>
+  <ellipse cx="96" cy="72" rx="36" ry="10" fill="none" stroke="#80CBC4" stroke-width="2.5" opacity="0.35"/>
+  <ellipse cx="96" cy="72" rx="24" ry="6" fill="none" stroke="#80CBC4" stroke-width="3" opacity="0.5"/>
+  <ellipse cx="96" cy="72" rx="12" ry="3" fill="#80CBC4" opacity="0.3"/>
+  
+  <!-- 遥控器主体 (倾斜，更有动感) -->
+  <g transform="translate(96,96) rotate(-15)">
+    <rect x="-34" y="-60" width="68" height="120" rx="10" fill="white"/>
+    <!-- 红外发射头 -->
+    <rect x="-14" y="-58" width="28" height="6" rx="3" fill="#B71C1C"/>
+    <ellipse cx="0" cy="-58" rx="14" ry="3" fill="#EF5350" opacity="0.5"/>
+    <!-- 屏幕 -->
+    <rect x="-24" y="-46" width="48" height="16" rx="3" fill="#004D40"/>
+    <text x="0" y="-34" font-family="sans-serif" font-size="7" fill="#A7FFEB" text-anchor="middle" font-weight="bold">万能</text>
+    <!-- 按钮列 -->
+    <circle cx="0" cy="-16" r="10" fill="#E53935"/>
+    <text x="0" y="-13" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">⏻</text>
+    <!-- 方向键 -->
+    <circle cx="0" cy="16" r="16" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="0.5"/>
+    <line x1="0" y1="2" x2="0" y2="30" stroke="#BDBDBD" stroke-width="1.5"/>
+    <line x1="-14" y1="16" x2="14" y2="16" stroke="#BDBDBD" stroke-width="1.5"/>
+    <circle cx="0" cy="16" r="4" fill="#00695C"/>
+    <!-- 数字按钮 -->
+    <rect x="-18" y="40" width="12" height="10" rx="2" fill="#ECEFF1"/>
+    <rect x="-3" y="40" width="12" height="10" rx="2" fill="#ECEFF1"/>
+    <rect x="12" y="40" width="10" height="10" rx="2" fill="#ECEFF1"/>
+    <text x="-12" y="48" font-family="sans-serif" font-size="6" fill="#546E7A" text-anchor="middle">●</text>
+    <text x="3" y="48" font-family="sans-serif" font-size="6" fill="#546E7A" text-anchor="middle">●</text>
+  </g>
+  
+  <!-- 红外光束 (从底部发出) -->
+  <g opacity="0.4">
+    <polygon points="96,156 66,190 126,190" fill="none" stroke="#FFD54F" stroke-width="1.5" opacity="0.3"/>
+    <polygon points="96,160 74,190 118,190" fill="none" stroke="#FFD54F" stroke-width="1" opacity="0.2"/>
+    <ellipse cx="96" cy="184" rx="4" ry="2" fill="#FFD54F" opacity="0.5"/>
+    <ellipse cx="96" cy="184" rx="10" ry="4" fill="#FFD54F" opacity="0.2"/>
+    <ellipse cx="96" cy="184" rx="18" ry="6" fill="#FFD54F" opacity="0.08"/>
+  </g>
+</svg>

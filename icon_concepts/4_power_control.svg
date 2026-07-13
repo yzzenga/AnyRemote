@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E65100"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="36" fill="url(#bg4)"/>
+  
+  <!-- 大电源按钮 (核心) -->
+  <circle cx="96" cy="90" r="50" fill="white" opacity="0.95"/>
+  
+  <!-- 电源图标 -->
+  <line x1="96" y1="58" x2="96" y2="90" stroke="#BF360C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M66 74 A36 36 0 1 0 126 74" fill="none" stroke="#BF360C" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- 左侧TV -->
+  <rect x="28" y="134" width="40" height="28" rx="4" fill="white" opacity="0.7"/>
+  <rect x="34" y="138" width="20" height="16" rx="2" fill="#BF360C" opacity="0.15"/>
+  <rect x="34" y="158" width="20" height="4" rx="1" fill="white" opacity="0.4"/>
+  <text x="48" y="152" font-family="sans-serif" font-size="7" fill="#BF360C" text-anchor="middle" opacity="0.7">TV</text>
+  
+  <!-- 右侧AC -->
+  <rect x="124" y="134" width="40" height="28" rx="4" fill="white" opacity="0.7"/>
+  <rect x="130" y="138" width="24" height="5" rx="1" fill="#BF360C" opacity="0.15"/>
+  <rect x="130" y="146" width="24" height="5" rx="1" fill="#BF360C" opacity="0.12"/>
+  <rect x="130" y="154" width="24" height="4" rx="1" fill="#BF360C" opacity="0.08"/>
+  <text x="144" y="152" font-family="sans-serif" font-size="7" fill="#BF360C" text-anchor="middle" opacity="0.7">AC</text>
+  
+  <!-- 从电源到设备的信号 -->
+  <path d="M72 136 Q88 120 96 116" stroke="#FFAB91" stroke-width="1.5" stroke-dasharray="3,2" fill="none" opacity="0.4"/>
+  <path d="M120 136 Q104 120 96 116" stroke="#FFAB91" stroke-width="1.5" stroke-dasharray="3,2" fill="none" opacity="0.4"/>
+  
+  <!-- 底部信号 -->
+  <ellipse cx="96" cy="170" rx="20" ry="4" fill="none" stroke="#FFD54F" stroke-width="1.5" opacity="0.3"/>
+  <ellipse cx="96" cy="170" rx="10" ry="2.5" fill="none" stroke="#FFD54F" stroke-width="2" opacity="0.5"/>
+</svg>

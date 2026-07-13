@@ -1,0 +1,32 @@
+# Android / Gradle
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.log
+*.hprof
+*.keystore
+*.jks
+
+# Kotlin
+*.kotlin_module
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+.cxx/
+*.crash
+lint/checks/**
+
+# SDK (bundled locally for CI)
+android-sdk/
+sdk-temp/
+cmdline-tools.zip
