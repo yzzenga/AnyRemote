@@ -272,31 +272,38 @@ fun AcRemoteScreen(
             // 协议选择
             if (protocols.size > 1) {
                 var expanded by remember { mutableStateOf(false) }
-                OutlinedCard(
-                    modifier = Modifier.fillMaxWidth(),
-                    onClick = { expanded = true }
-                ) {
-                    Row(
-                        modifier = Modifier.fillMaxWidth().padding(12.dp),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Text("代码组: ${currentProtocol?.description ?: "请选择"}",
-                            modifier = Modifier.weight(1f))
-                        Icon(Icons.Default.ArrowDropDown, contentDescription = null)
-                    }
-                }
-                DropdownMenu(
+                ExposedDropdownMenuBox(
                     expanded = expanded,
-                    onDismissRequest = { expanded = false }
+                    onExpandedChange = { expanded = it }
                 ) {
-                    protocols.forEach { proto ->
-                        DropdownMenuItem(
-                            text = { Text("${proto.description} (${proto.frequency / 1000}KHz)") },
-                            onClick = {
-                                viewModel.selectProtocol(proto)
-                                expanded = false
-                            }
-                        )
+                    OutlinedCard(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .menuAnchor(),
+                        onClick = { expanded = true }
+                    ) {
+                        Row(
+                            modifier = Modifier.fillMaxWidth().padding(12.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text("代码组: ${currentProtocol?.description ?: "请选择"}",
+                                modifier = Modifier.weight(1f))
+                            Icon(Icons.Default.ArrowDropDown, contentDescription = null)
+                        }
+                    }
+                    ExposedDropdownMenu(
+                        expanded = expanded,
+                        onDismissRequest = { expanded = false }
+                    ) {
+                        protocols.forEach { proto ->
+                            DropdownMenuItem(
+                                text = { Text("${proto.description} (${proto.frequency / 1000}KHz)") },
+                                onClick = {
+                                    viewModel.selectProtocol(proto)
+                                    expanded = false
+                                }
+                            )
+                        }
                     }
                 }
             }

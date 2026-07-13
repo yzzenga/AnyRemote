@@ -145,39 +145,46 @@ fun RemoteScreen(
             // 协议选择器
             if (protocols.size > 1) {
                 var expanded by remember { mutableStateOf(false) }
-                OutlinedCard(
-                    modifier = Modifier.fillMaxWidth(),
-                    onClick = {
-                        view.performHapticFeedback(android.view.HapticFeedbackConstants.KEYBOARD_TAP)
-                        expanded = true
-                    }
+                ExposedDropdownMenuBox(
+                    expanded = expanded,
+                    onExpandedChange = { expanded = it }
                 ) {
-                    Row(
+                    OutlinedCard(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(12.dp),
-                        verticalAlignment = Alignment.CenterVertically
+                            .menuAnchor(),
+                        onClick = {
+                            view.performHapticFeedback(android.view.HapticFeedbackConstants.KEYBOARD_TAP)
+                            expanded = true
+                        }
                     ) {
-                        Text(
-                            "代码组: ${currentProtocol?.description ?: "请选择"}",
-                            modifier = Modifier.weight(1f)
-                        )
-                        Icon(Icons.Default.ArrowDropDown, contentDescription = null)
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(12.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                "代码组: ${currentProtocol?.description ?: "请选择"}",
+                                modifier = Modifier.weight(1f)
+                            )
+                            Icon(Icons.Default.ArrowDropDown, contentDescription = null)
+                        }
                     }
-                }
-                DropdownMenu(
-                    expanded = expanded,
-                    onDismissRequest = { expanded = false }
-                ) {
-                    protocols.forEach { proto ->
-                        DropdownMenuItem(
-                            text = { Text("${proto.description} (${proto.frequency / 1000}KHz)") },
-                            onClick = {
-                                view.performHapticFeedback(android.view.HapticFeedbackConstants.KEYBOARD_TAP)
-                                viewModel.selectProtocol(proto)
-                                expanded = false
-                            }
-                        )
+                    ExposedDropdownMenu(
+                        expanded = expanded,
+                        onDismissRequest = { expanded = false }
+                    ) {
+                        protocols.forEach { proto ->
+                            DropdownMenuItem(
+                                text = { Text("${proto.description} (${proto.frequency / 1000}KHz)") },
+                                onClick = {
+                                    view.performHapticFeedback(android.view.HapticFeedbackConstants.KEYBOARD_TAP)
+                                    viewModel.selectProtocol(proto)
+                                    expanded = false
+                                }
+                            )
+                        }
                     }
                 }
                 Spacer(modifier = Modifier.height(12.dp))
