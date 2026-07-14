@@ -140,7 +140,7 @@
         },
         {
           "id": "sony_15bit_1",
-          "protocol": "SONY_SIRC",
+          "protocol": "SONY_SIRC_15",
           "frequency": 40000,
           "deviceCode": 1,
           "description": "Sony 15位 设备码1(新款)",
