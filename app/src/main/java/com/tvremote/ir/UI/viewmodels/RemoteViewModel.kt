@@ -13,7 +13,9 @@ import com.tvremote.ir.Model.ProtocolConfig
 import com.tvremote.ir.Model.SavedRemote
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 /**
  * 遥控器 ViewModel - 管理 IR 发射、校准扫描、保存遥控器
@@ -122,7 +124,7 @@ class RemoteViewModel(application: Application) : AndroidViewModel(application) 
      */
     fun sendKey(keyName: String) {
         val protocol = _currentProtocol.value ?: return
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             try {
                 irBlaster.sendKey(protocol, keyName)
             } catch (e: Exception) {
@@ -139,7 +141,7 @@ class RemoteViewModel(application: Application) : AndroidViewModel(application) 
         if (protocol != null) {
             val keys = protocol.keys
             val powerKey = keys["power"] ?: return
-            viewModelScope.launch {
+            viewModelScope.launch(Dispatchers.IO) {
                 try {
                     val pattern = com.tvremote.ir.IR.IRProtocols.generateRawPattern(
                         protocol = protocol.protocol,
@@ -153,7 +155,7 @@ class RemoteViewModel(application: Application) : AndroidViewModel(application) 
                 }
             }
         } else {
-            viewModelScope.launch {
+            viewModelScope.launch(Dispatchers.IO) {
                 try {
                     val pattern = com.tvremote.ir.IR.IRProtocols.generateRawPattern("NEC", 0, 0x45)
                     irBlaster.transmit(frequency, pattern)

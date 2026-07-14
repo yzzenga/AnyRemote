@@ -43,10 +43,13 @@ object IRProtocols {
             return pattern.toIntArray()
         }
 
-        // 标准 NEC：16位地址 + 8位命令 + 8位命令反码
+        // 标准 NEC：8位地址 + 8位地址反码 + 8位命令 + 8位命令反码 = 32位
         fun generateStandard(address: Long, command: Long): IntArray {
-            val cmdInv = (command xor 0xFF) and 0xFF
-            val fullCode = ((address and 0xFFFF) shl 16) or ((command and 0xFF) shl 8) or cmdInv
+            val addr = address.toInt() and 0xFF
+            val addrInv = addr.inv() and 0xFF
+            val cmd = command.toInt() and 0xFF
+            val cmdInv = cmd.inv() and 0xFF
+            val fullCode = (addr.toLong() shl 24) or (addrInv.toLong() shl 16) or (cmd.toLong() shl 8) or cmdInv.toLong()
             val pattern = mutableListOf<Int>()
 
             pattern.add(LEADER_ON)
@@ -156,7 +159,12 @@ object IRProtocols {
             pattern.add(LEADER_ON)
             pattern.add(LEADER_OFF)
 
-            val fullCode = ((address and 0xFFFF) shl 16) or (command and 0xFFFF)
+            // command > 0xFFFF 表示 JSON 存的是完整32位码值，直接使用
+            val fullCode = if (command > 0xFFFF) {
+                command and 0xFFFFFFFFL
+            } else {
+                ((address and 0xFFFFL) shl 16) or (command and 0xFFFFL)
+            }
             for (i in 31 downTo 0) {
                 val bit = ((fullCode shr i) and 1L).toInt()
                 pattern.add(BIT_ON)
@@ -187,13 +195,27 @@ object IRProtocols {
         bits: Int = 32
     ): IntArray {
         return when (protocol.uppercase()) {
-            "NEC" -> NEC.generatePattern(address, command, bits)
+            "NEC" -> {
+                // JSON中bits<=16表示 address + command 分离存储，需构建完整32位NEC帧
+                if (bits <= 16) NEC.generateStandard(address, command)
+                else NEC.generatePattern(address, command, bits)
+            }
             "NEC_STANDARD" -> NEC.generateStandard(address, command)
-            "SONY", "SONY_SIRC" -> SonySIRC.generatePattern(address, command, bits)
+            "SONY", "SONY_SIRC" -> {
+                // Sony SIRC 12位：7位命令+5位设备
+                SonySIRC.generatePattern(address, command, 12)
+            }
+            "SONY_SIRC_15" -> {
+                // Sony SIRC 15位：7位命令+8位设备（新款）
+                SonySIRC.generatePattern(address, command, 15)
+            }
             "RC5" -> RC5.generatePattern(address, command)
             "SAMSUNG" -> Samsung.generatePattern(address, command)
             "RG" -> RG.generatePattern(address, command)
-            else -> NEC.generatePattern(address, command, bits) // 默认使用NEC
+            else -> {
+                if (bits <= 16) NEC.generateStandard(address, command)
+                else NEC.generatePattern(address, command, bits)
+            }
         }
     }
 
@@ -203,7 +225,7 @@ object IRProtocols {
     fun getFrequency(protocol: String): Int {
         return when (protocol.uppercase()) {
             "NEC", "NEC_STANDARD", "SAMSUNG", "RG" -> 38000
-            "SONY", "SONY_SIRC" -> 40000
+            "SONY", "SONY_SIRC", "SONY_SIRC_15" -> 40000
             "RC5", "RC6" -> 36000
             else -> 38000
         }
